@@ -1,11 +1,15 @@
 public void setup() {
   background(0, 0, 0);
   size(610, 610);
+  len = 600;
 }
 
+int len = 0;
+
 public void draw(){
+  
   fill(0);
-  sierpinski(5, 600, 600);
+  sierpinski(5, 600, len);
 }
 public void mouseDragged(){ //optional
 }
